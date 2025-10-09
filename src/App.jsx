@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import ProductList from './components/ProductList';
 
 function App() {
   const [likes, setLikes] = useState(0);
@@ -35,6 +36,8 @@ function App() {
         {likes >= 4 && <p>Você atingiu o limite!</p>}
 
       <p>Ultimo clique: {ultimaHora || "Nenhuma ainda"}</p>
+
+    <ProductList />
     </>
   )
 }
